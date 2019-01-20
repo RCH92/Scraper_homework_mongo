@@ -1,0 +1,27 @@
+{
+  "name": "scraper_homework_mongo",
+  "version": "1.0.0",
+  "description": "MongoDB homework. News scraper and comment site.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RCH92/Scraper_homework_mongo.git"
+  },
+  "author": "Ross Hallenbeck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RCH92/Scraper_homework_mongo/issues"
+  },
+  "homepage": "https://github.com/RCH92/Scraper_homework_mongo#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.4.5"
+  }
+}

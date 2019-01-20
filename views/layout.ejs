@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MongoScrape</title>
+    <link href="../public/assets/css/style.css" rel="stylesheet"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="flexright navbar">
+        <h1>Welcome to MongoScrape!</h1>
+    </div>
+    <div class="flexright mainBody">
+    <!-- ejs body link -->
+    <%- body %>
+    </div>
+    <!-- Link to the script_link.ejs partial -->
+    <!-- provides the propper link based on what ejs file is served -->
+    <% include ./partials/script_link %>
+</body>
+</html>
