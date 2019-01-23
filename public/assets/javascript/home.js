@@ -60,3 +60,8 @@ $('#articleContainer').on('click', '.article', function() {
     });
     console.log();
 })
+$('#scrapeBtn').on("click", function(){
+    $.get('/scrape').then(() => {
+        location.reload();
+    })
+})

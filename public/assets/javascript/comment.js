@@ -58,3 +58,8 @@ let id = $("#commentArticle").data('id')
 
     
 })
+$('#scrapeBtn').on("click", function(){
+    $.get('/scrape').then(() => {
+        location.reload();
+    });
+});

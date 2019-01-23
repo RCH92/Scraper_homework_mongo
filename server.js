@@ -6,7 +6,7 @@ const cheerio = require('cheerio'); //scraping tool
 // ejs package
 var expressLayouts = require('express-ejs-layouts');
 
-
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 // models
 db = require('./models');
 
@@ -29,7 +29,8 @@ app.use(express.static(__dirname + "/public"));
 
 
 // mongoDB link
-mongoose.connect("mongodb://localhost/Mongoscraper", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/Mongoscraper", { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI);
 
 // routes
 require("./routes/api/index.js")(app,axios,cheerio,db);
