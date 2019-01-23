@@ -11,7 +11,7 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines
 db = require('./models');
 
 // port
-var PORT = 8080 || process.env.PORT;
+var PORT = process.env.PORT || 3000;
 
 // init express
 const app = express();
