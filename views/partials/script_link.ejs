@@ -1,9 +1,9 @@
 <!-- This script_links.ejs file supplies the correct js link to the bottom of the layout.ejs file -->
 <!-- if we send an object with the type: 'main' in our app.render it will supply this link: -->
 <% if(type === 'main') { %>
-    <script src="assets/javascript/home.js"></script>
+    <script src="/assets/javascript/home.js"></script>
 <% } %>
 <!-- if we send an object with the type: 'comment' in our app.render it will supply this link:  -->
 <% if(type === 'comment') { %>
-    <script src="assets/javascript/comment.js"></script>
+    <script src="/assets/javascript/comment.js"></script>
 <% } %>

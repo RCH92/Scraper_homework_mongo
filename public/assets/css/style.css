@@ -9,15 +9,68 @@
 }
 .navbar{
     width: 100%;
-    height: 200px;
-    justify-content: center;
-    text-align: center;
+    
+    align-items: baseline;
+    
+}
+.navbar h3{
+    left: 50px;
 }
 .mainBody{
     max-width: 1200px;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
 }
 .articles img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 150px;
     
+}
+.article{
+    padding: 15px;
+    /* margin-bottom: 15px; */
+    border-bottom: 1px black solid;
+}
+.article h3:hover{
+    cursor: pointer;
+}
+.article img:hover{
+    cursor: pointer;
+}
+.titleDiv{
+    padding:10px;
+    margin: 10px;
+    justify-content: center;
+}
+.articles{
+    margin: auto; 
+}
+#home{
+    float: left;
+    justify-self: left;
+}
+#title{
+    margin: auto;
+}
+#commentBody{
+    width: 600px;
+    height: 500px;
+}
+#commentTitle{
+    margin:auto;
+}
+#commentForm{
+    margin: auto;
+}
+#commentSpan{
+    border-bottom: 1px black solid;
+    width: 1200px;
+}
+.comment{
+    border-bottom: 1px black solid;
+}
+.commentTitle{
+    border-bottom: 1px black solid;
+    width: fit-content;
 }

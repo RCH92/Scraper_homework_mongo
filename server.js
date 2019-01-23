@@ -25,14 +25,15 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Make public a static folder
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
 
 
 // mongoDB link
 mongoose.connect("mongodb://localhost/Mongoscraper", { useNewUrlParser: true });
+
 // routes
 require("./routes/api/index.js")(app,axios,cheerio,db);
-require("./routes/view/index.js")(app);
+app.use('/', require("./routes/view"));
 
 //server start 
 app.listen(PORT, function() {

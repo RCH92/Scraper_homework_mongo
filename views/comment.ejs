@@ -1,3 +1,16 @@
 <!-- comments.esj will contain the title, body, and image of an individual article -->
 <!-- below the article will be a comment form -->
 <!-- below the comment form will be other comments sorted by oldest first -->
+<div class="comment flexdown" id="commentArticle" data-id="<%= typeof id != 'undefined' ? id : '' %>">
+    <form action="/comment/post" id="commentForm" method="POST">
+        <input type="text" id="commentSubject" name="subject" placeholder="Comment Title">
+        <br>
+        <textarea form="commentForm" id="commentBody" rows="10" cols="100" placeholder="Write comment here..."></textarea>
+        <br>
+        <button type="button" form="commentForm" id="submitButton" value="">Submit</button>
+        <br>
+        
+    </form> 
+     <span id="commentSpan">Comments:</span>  
+</div>
+

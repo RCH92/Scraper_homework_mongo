@@ -10,7 +10,7 @@ var CommentSchema = new Schema({
   
   body: String,
 
-  rating: Number,
+  artID: String,
 
   date: Date
 });

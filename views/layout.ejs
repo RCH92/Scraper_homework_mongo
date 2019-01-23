@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MongoScrape</title>
-    <link href="../public/assets/css/style.css" rel="stylesheet"></link>
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css"></link>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="flexright navbar">
-        <h1>Welcome to MongoScrape!</h1>
+        <h3><a href="/">Home</a></h3>
+        <div id="title"><h1>Welcome to MongoScrape!</h1></div>
+        <!-- <button style="float: right"><a href="/"></a></button> -->
+        
     </div>
-    <div class="flexright mainBody">
+    <div class="flexright mainBody" id="test">
     <!-- ejs body link -->
     <%- body %>
     </div>
