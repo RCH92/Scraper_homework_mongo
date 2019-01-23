@@ -54,9 +54,9 @@
     margin: auto;
 }
 #commentBody{
-    width: 600px;
-    height: 500px;
-}
+    width: 1200px;
+   
+ } 
 #commentTitle{
     margin:auto;
 }
@@ -73,4 +73,10 @@
 .commentTitle{
     border-bottom: 1px black solid;
     width: fit-content;
+}
+#commentArticle img{
+    max-width: 1200px;
+    justify-self: center;
+    margin: auto;
+    
 }

@@ -6,7 +6,7 @@ $(document).ready(()=>{
  
     });
     $.getJSON(`/comments/${id}`, data => {
-        console.log("WEEEEEEE" + data);
+        // console.log("WEEEEEEE"/ + data);
         renderComments(data);
     })
     
