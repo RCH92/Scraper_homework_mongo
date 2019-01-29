@@ -27,8 +27,8 @@ module.exports = function (app, axios, cheerio, db) {
                 result.date = date;
 
                 // pushing object to DB
-
-                db.Article.create(result).then(function (dbArticle) {
+                // db.Article.insertOne(result)
+                db.Article.update(result, result, {upsert:true}).then(function (dbArticle) {
                     console.log(dbArticle);
                 }).catch(function (err) {
                     console.log(err)
