@@ -46,7 +46,7 @@ app.get("/articles:start", (req, res) => {
     // Grab every document in the Articles collection
     console.log(req.params.start);
     let offset = parseInt(req.params.start);
-    db.Article.find({}).sort({datefield: -1}).skip(offset).limit(20)
+    db.Article.find({}).sort({date: -1}).skip(offset).limit(20)
       .then(function(dbArticle) {
         //   console.log(dbArticle + "^test");
         // If we were able to successfully find Articles, send them back to the client
