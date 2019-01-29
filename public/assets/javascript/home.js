@@ -31,7 +31,10 @@ const renderArticles = (element) => {
         article.append(titleDiv);
         // adding article to page
         $('#articleContainer').append(article);
+
+        
     });
+        
 }
 
 // ***IMAGE BASE64 DECODER***//
@@ -64,4 +67,15 @@ $('#scrapeBtn').on("click", function(){
     $.get('/scrape').then(() => {
         location.reload();
     })
+})
+var offset = 0;
+$('#loadMore').on("click", function(){
+    event.preventDefault();
+    offset += 20;
+    $.getJSON(`/articles${offset}`, data => {
+        renderArticles(data);
+        
+        
+    });
+
 })

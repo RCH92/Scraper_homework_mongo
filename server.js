@@ -6,7 +6,7 @@ const cheerio = require('cheerio'); //scraping tool
 // ejs package
 var expressLayouts = require('express-ejs-layouts');
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/Mongoscraper";
 // models
 db = require('./models');
 
